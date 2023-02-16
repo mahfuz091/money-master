@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="text-center text-5xl mt-10 text-lime-600 font-bold">Money Master</h1>
+
+    <section class="container mx-auto mt-8 ">
+        <div class="flex">
+            <div>
+                <img class="rounded-lg" src="images/bg.png" alt="" srcset="">
+            </div>
+            <div class="ml-10 rounded-lg text-center bg-gray-300">
+                <h2 class="px-52 text-2xl font-semibold mt-2">Income</h2>
+                <div class="">
+                    <div class="mt-6 ">
+                        <label class="text-lg font-medium" for="">Income:</label>
+                        <input id="income" class="p-2 rounded-md w-3/5" type="number" name="" id="">
+                    </div>
+                    <h2 class="px-52 text-2xl font-semibold mt-6">Expense</h2>
+                    <div class="mt-6">
+                        <label class="text-lg font-medium" for="">Food:</label>
+                        <input id="food" class="p-2 rounded-md w-3/5" type="number" name="" id="">
+                    </div>
+                    <div class="mt-6">
+                        <label class="text-lg font-medium text-left" for="">Rent:</label>
+                        <input id="rent" class="p-2 rounded-md w-3/5" type="number" name="" id="">
+                    </div>
+                    <div class="mt-6">
+                        <label class="text-lg font-medium" for="">Cloths:</label>
+                        <input id="cloth" class="p-2 rounded-md w-3/5" class="" type="number" name="" id="">
+                    </div>
+                    <button id="btn-calculate" class="bg-green-500 p-2 rounded-md mt-5">Calculate</button>
+                    <h2 class="text-2xl font-medium mt-2">Total Expense: <span id="total">00</span></h2>
+                    <h2 class="text-2xl font-medium mt-4">Balance: <span id="balance">00</span></h2>
+                    <div class="mt-4">
+                        <label class="text-lg font-medium" for="">Save:</label>
+                        <input id="save-percentage" class="p-2 rounded-md  " type="number" name="" id="">
+                        <span>%</span>
+                        <button id="save" class="bg-green-500 py-2 px-8 rounded-md">Save</button>
+                    </div>
+                    <h2 class="text-2xl font-medium mt-2">Saving Amount: <span id="save-amount">00</span></h2>
+                    <h2 class="text-2xl font-medium mt-2">Remaining Balance: <span id="remaining-balance">00</span></h2>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+</html>
